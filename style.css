@@ -1,0 +1,39 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.grid_4col_1-1-1-1 {
+  display: grid;
+  gap: 10px;
+}
+.img {
+  align-self: auto;
+  object-fit: contain;
+}
+
+@media (width>=500px) {
+  .grid_4col_1-1-1-1 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .img1 {
+    grid-area: 1/1/3/3;
+  }
+  .img2 {
+    grid-area: 1/3/2/4;
+  }
+  .img3 {
+    grid-area: 1/4/2/5;
+  }
+  .img4 {
+    grid-area: 2/3/3/5;
+  }
+}
